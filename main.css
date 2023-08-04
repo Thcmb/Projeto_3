@@ -1,0 +1,432 @@
+
+.menu-fixo {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.nav-link:visited {
+    color: #fff;
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.nav-link .bi-door-open,
+.nav-link .bi-journal-plus,
+.nav-link .bi-question-square {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.nav-link:hover .bi-door-closed,
+.nav-link:hover .bi-journal,
+.nav-link:hover .bi-question-circle {
+    visibility: hidden;
+}
+
+.nav-link:hover .bi-door-open,
+.nav-link:hover .bi-journal-plus,
+.nav-link:hover .bi-question-square{
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-container img {
+    height: 700px ;
+}
+
+.carousel-indicators {
+    margin-bottom: 100px;
+}
+
+.nav-sobre {
+    background-color: rgba(0, 0, 0, 0.459);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.nav-menu {
+    justify-content: space-around;
+}
+
+.nav-menu button {
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px  #000;
+    background-color: none;
+}
+
+.nav-menu .nav-link.active {
+    background-color: #fff ;
+    color: #000;
+    border: 2px solid black;
+}
+
+.sec-sobre {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000000;
+}
+
+.sobre-tab h2 {
+    font-weight: bold;
+    border-bottom: 2px solid #353535;
+}
+
+#img1{
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/sunset-3226467_1280.jpg); /* Imagem padrão */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px 4px 4px #353535;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#img1:hover {
+    background-image: url(./imgs/beach-7252178_1280.jpg);
+    transform: scale(1.02);
+}
+
+#img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/resort-2495223_1280.jpg); /* Imagem padrão */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px 4px 4px #353535;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#img2:hover {
+    background-image: url(./imgs/bahrain-1369259_1280.jpg);
+    transform: scale(1.02);
+}
+
+.card {
+    background-color: transparent;
+    width: 380px;
+    height: 380px;
+    perspective: 1000px;
+    border: none;
+}
+
+.card img {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px
+}
+
+.flip-card-front {
+    background-color: #ccc;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #7a7a7a;
+    color: #fff;
+}
+
+.flip-card-back p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flip-card-back a {
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 4px 4px  #000;
+    transition: transform 0.5s;
+}
+
+.flip-card-back a:hover {
+    background-color: #fff;
+    color: #000;
+    border:1px solid #000 ;
+    transform: scale(1.05);
+}
+
+.form {
+    background-color: #CCC;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input {
+    border: none;
+    border-radius: 8px;
+    width: 30%;
+    padding: 5px;
+}
+
+.form select {
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.form button {
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 4px 4px  #000;
+    transition: transform 0.5s;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: #000;
+    border:1px solid #000 ;
+    transform: scale(1.05);
+}
+
+.buffet img {
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+
+.buffet img:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 4px 4px #8f8f8f;
+}
+
+
+footer {
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .menu-fixo {
+        color: #fff;
+        position: relative;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .menu-fixo li {
+        display: block;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .nav-link:hover {
+        color: #fff;
+        transform: none;
+    }
+
+    .navbar-branch {
+        margin: 0 auto;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0px;
+    }
+    
+    .nav-sobre {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        position: relative;
+        margin-top: 10px;
+        transform: translateX(0);
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .nav-menu {
+        justify-content: space-around;
+    }
+    
+    .nav-menu button {
+        color: #fff;
+        border: 2px solid #fff;
+        box-shadow: 3px 3px  #000;
+        background-color: none;
+    }
+    
+    .nav-menu .nav-link.active {
+        background-color: #fff ;
+        color: #000;
+        border: 2px solid black;
+    }
+    
+    .sec-sobre {
+        overflow-x: auto;
+        overflow-y: auto;
+        border-top: 2px solid #000000;
+    }
+    
+    .sobre-tab h2 {
+        font-weight: bold;
+        border-bottom: 2px solid #353535;
+    }
+
+    #img1{
+        width: 300px;
+        height: 300px;
+        background-image: url(imgs/sunset-3226467_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: none;
+        border: 2px solid #fff;
+        box-shadow: 4px 4px 4px 4px #353535;
+        transition: none;
+        margin-bottom: 25px;
+    }
+    
+    #img1:hover {
+        background-image: url(./imgs/sunset-3226467_1280.jpg);
+        transform: none;
+    }
+    
+    #img2{
+        width: 300px;
+        height: 300px;
+        background-image: url(imgs/resort-2495223_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: none;
+        border: 2px solid #fff;
+        box-shadow: 4px 4px 4px 4px #353535;
+        cursor: pointer;
+        transition: none;
+    }
+    
+    #img2:hover {
+        background-image: url(./imgs/resort-2495223_1280.jpg);
+        transform: none;
+    }
+
+    .form {
+        background-color: #CCC;
+        padding: 15px;
+        display: block;
+        align-items: center;
+    }
+    
+    .form label {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .form input {
+        border: none;
+        border-radius: 8px;
+        width: 30%;
+        padding: 5px;
+    }
+    
+    .form select {
+        border: none;
+        border-radius: 8px;
+        padding: 4px;
+    }
+    
+    .form button {
+        background-color: #fff;
+        border: 1px solid #000;
+        box-shadow: 4px 4px  #000;
+        transition: transform 0.5s;
+        margin-left: 10px;
+        padding: 3px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .menu-fixo {
+        font-size: 20px;
+    }
+
+    .menu-fixo h1 {
+        font-size: 40px;
+    }
+
+    .nav-sobre {
+        font-size: 20px;
+    }
+
+    .sobre-tab {
+        font-size: 25px;
+    }
+
+    .diarias-tab {
+        font-size: 18px;
+    }
+
+    .buffet {
+        font-size: 20px;
+    }
+
+    .buffet img {
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+}
+
+
